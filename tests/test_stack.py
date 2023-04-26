@@ -3,8 +3,6 @@ import pytest
 
 def test_stack():
     stack = []
-    # Добавляем два элемента в стек и затем извлекаем их
-    # Почему два? Так надежнее, чем один, а три — уже избыточно
     stack.append('one')
     stack.append('two')
 
@@ -16,7 +14,7 @@ def test_emptiness():
     stack = []
     assert not stack
     stack.append('one')
-    assert bool(stack)  # not not stack
+    assert bool(stack)
 
     stack.pop()
     assert not stack
